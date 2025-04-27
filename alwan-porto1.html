@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @keyframes warnaBerganti {
+      0% { color: #ff0000; }    /* Putih */
+      15% { color: #fbff00; }    /* Hijau */
+      30% { color: #098d46; }
+      45% { color: #82cbff; }     /* Biru */
+      60% { color: #ff00a6; }
+      75% { color: #00fbff; }
+    }
+  
+    .warni {
+      animation: warnaBerganti 1.25s infinite;
+    }
+  </style>
+  
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen ">
+
+<!-- Navbar -->
+<header class="bg-[#3B82F6] shadow-md fixed top-0 left-0 w-full z-50">
+  <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center relative">
+    
+    <!-- Logo / Nama -->
+    <div class="text-xl text-white text-bold">
+      Alwan Rofail Qodri
+    </div>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden text-2xl text-gray-700 focus:outline-none">
+      &#9776;
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium">
+      <a href="#home" class="text-white hover:text-[#fbff00]">Home</a>
+      <a href="#about" class="text-white hover:text-[#fbff00]">About Me</a>
+      <a href="#project" class="text-white hover:text-[#fbff00]">Project</a>
+      <a href="#contact" class="text-white hover:text-[#fbff00]">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="menu-mobile" class="hidden absolute top-full right-4 mt-2 w-40 bg-[#3B82F6] rounded-lg shadow-md py-2 text-sm font-medium z-50 md:hidden">
+      <a href="#home" class="block px-4 py-2 text-white hover:text-[#fbff00]">Home</a>
+      <a href="#about" class="block px-4 py-2 text-white hover:text-[#fbff00]">About Me</a>
+      <a href="#project" class="block px-4 py-2 text-white hover:text-[#fbff00]">Project</a>
+      <a href="#contact" class="block px-4 py-2 text-white hover:text-[#fbff00]">Contact</a>
+    </div>
+  </div>
+</header>
+
+
+
+  <!-- Kontainer Utama -->
+  <div class="max-w-[70%] mx-auto">
+
+    <section id="home" class="flex flex-col md:flex-row items-center justify-between pt-8 mt-28 bg-white font-mono shadow-2xl bg-gradient-to-br from-[#3B82F6] via-[#FFFFFF] to-[#10B981] ">
+      <!-- Kiri: Nama & Keahlian -->
+      <div class="md:w-1/2 text-center md:text-left mx-8 md:mb-0">
+        <h2 class="text-4xl font-bold mb-4">Hola, I'm <span class="text-blue-500">Alwan Rofail Qodri</span></h2>
+        <p class="bg-black text-lg warni pl-4">Web Developer | Data Science</p>
+      </div>
+    
+      <!-- Kanan: Foto -->
+      <div class="md:w-1/2 flex justify-center my-10 mx-12">
+        <img src="/img/foto-fix.png" alt="Foto Saya" class="rounded-full shadow-2xl w-64 h-64 object-cover">
+      </div>
+    </section>
+
+
+    <!-- about me -->
+
+    <section id="about" class="lex flex-col md:flex-row items-center justify-between mt-28 bg-white font-mono shadow-2xl mt-28">
+      <div class="text-center mb-8 pt-10">
+        <h2 class="text-3xl font-bold">About Me</h2>
+        <div class="w-24 h-1 bg-blue-500 mx-auto mt-2 rounded-full"></div>
+      </div>
+    
+      <div class="text-lg leading-relaxed max-w-3xl mx-auto text-center pb-12 px-3">
+        <p>
+          Saya adalah seorang pengembang web dengan yang fokus pada front-end development menggunakan HTML, CSS, JavaScript, dan framework modern yaitu Tailwind CSS dan React.
+        </p>
+        <br>
+        <p class="mt-4">
+          Saya juga seorang data scientist yang memiliki ketertarikan dalam analisis data dan machine learning. Saya selalu berusaha untuk belajar dan mengembangkan keterampilan saya di bidang ini.
+          untuk detail sertifikat keahlian dibidang data science bisa mengunjungi linkedin atau <a href="https://www.linkedin.com/in/alwan-rofail-79514a275/" class="text-blue-600 font-extrabold">klik tombol ini</a>.
+        </p>
+      </div>
+    </section>
+    
+  </div>
+
+
+<!-- Wrapper Utama -->
+<div class="mx-auto mt-28">
+
+  <!-- Projects Section -->
+  <section id="project" class="bg-black pt-20 pb-28">
+    <div class="max-w-5xl mx-auto px-4">
+      
+      <!-- Judul -->
+      <div class="text-center mb-20">
+        <h2 class="text-3xl font-bold text-white shadow-2xl">Projects</h2>
+        <div class="w-24 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></div>
+      </div>
+
+      <!-- Wrapper Card -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 place-items-stretch mx-10">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl shadow-md p-6 w-full h-full flex flex-col">
+          <div class="flex-grow">
+            <h3 class="text-xl font-semibold mb-2">WEB OF THE HIMA MANAGEMENT STUDY PROGRAM OF ALMA ATA UNIVERSITY OF YOGYAKARTA</h3>
+            <p class="text-gray-600">This project is a college assignment from a web development course that I worked on myself.
+            </p>
+          </div>
+          <a href="https://github.com/alwanfail/uaa-web-himaje" class="text-blue-600 hover:underline font-medium mt-auto pt-4">See in GitHub →</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-xl shadow-md p-6 w-full h-full flex flex-col">
+          <div class="flex-grow">
+            <h3 class="text-xl font-semibold mb-2">APLIKASI NUTRISENSE</h3>
+            <p class="text-gray-600">This project is a capstone (final assignment from MSib Mitra Bangkit Academy 2024 batch 2)
+              which was carried out by a team of 6 people.</p>
+          </div>
+          <a href="https://github.com/taufanAli65/NutriSense-Capstone" class="text-blue-600 hover:underline font-medium mt-auto pt-4">See in GitHub →</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-xl shadow-md p-6 w-full h-full flex flex-col">
+          <div class="flex-grow">
+            <h3 class="text-xl font-semibold mb-2">DATA ANALYSIS AND VISUALIZATION WITH PYTHON</h3>
+            <p class="text-gray-600">Process data and display it with python, more precisely using anaconda, streamlit, pandas, matplotlib, seaborn, and numpy</p>
+          </div>
+          <a href="https://github.com/alwanfail/submission" class="text-blue-600 hover:underline font-medium mt-auto pt-4">See in GitHub →</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-xl shadow-md p-6 w-full h-full flex flex-col">
+          <div class="flex-grow">
+            <h3 class="text-xl font-semibold mb-2">BUILDING A COMPANY PROFILE WEBSITET</h3>
+            <p class="text-gray-600">Is a personal project</p>
+          </div>
+          <a href="https://github.com/alwanfail/alfa-enola" class="text-blue-600 hover:underline font-medium mt-auto pt-4">See in GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="mt-20 pb-20">
+    <div class="text-center py-8">
+      <h2 class="text-3xl font-bold">Contact Me</h2>
+      <div class="w-24 h-1 bg-blue-500 mx-auto mt-2 rounded-full"></div>
+    </div>
+  
+    <!-- Konten Kontak -->
+    <div class="flex flex-col md:flex-row items-center justify-center container mx-auto px-4 mt-8">
+  
+      <!-- Kanan: Link Kontak dengan Icon -->
+      <div class="flex flex-col space-y-4 text-lg text-blue-600">
+        <!-- Email -->
+        <a href="mailto:alwanlearn00@email.com" class="flex items-center space-x-2 hover:text-[#fbff00] transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M2.01 6.87L12 13.13l9.99-6.26A2.01 2.01 0 0 0 20 5H4a2.01 2.01 0 0 0-1.99 1.87zM22 8.24l-10 6.25-10-6.25V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.24z"/>
+          </svg>
+          <span>Email: alwanlearn00@email.com</span>
+        </a>
+  
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/alwan-rofail-79514a275/" target="_blank" class="flex items-center space-x-2 hover:text-[#fbff00] transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.4c-.97 0-1.75-.78-1.75-1.75S5.53 4.1 6.5 4.1s1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.4h-3v-5.6c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.69h-3v-10h2.89v1.37h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.58z"/>
+          </svg>
+          <span>LinkedIn: alwan-linkedin</span>
+        </a>
+  
+        <!-- GitHub -->
+        <a href="https://github.com/alwanfail" target="_blank" class="flex items-center space-x-2 hover:text-[#fbff00] transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.256c-3.338.726-4.033-1.415-4.033-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.082-.729.082-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.333-5.466-5.932 0-1.311.469-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.984-.399 3.003-.404 1.019.005 2.047.138 3.006.404 2.289-1.553 3.295-1.23 3.295-1.23.655 1.653.243 2.874.119 3.176.77.84 1.235 1.911 1.235 3.222 0 4.61-2.807 5.624-5.479 5.921.43.372.814 1.102.814 2.222v3.293c0 .319.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+          <span>GitHub: alwan-github</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+<!-- Footer -->
+<footer class="bg-black text-white text-center py-6">
+  <p class="text-sm">&copy; 2025 Alwan Rofail Qodri. All rights reserved.</p>
+
+</footer>
+
+
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menuMobile = document.getElementById('menu-mobile');
+
+  menuBtn.addEventListener('click', () => {
+    menuMobile.classList.toggle('hidden');
+  });
+</script>
+
+
+</body>
+</html>
